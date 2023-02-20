@@ -37,7 +37,14 @@ function calculateWinner(squares) {
 // And call handlePlay() function.
 //
 
-function handleClick(i, squares, xIsNext, onPlay, onLocation) {
+function handleClick(
+	i, 
+	squares, 
+	xIsNext, 
+	onPlay, 
+	onLocation
+) {
+
 	const nextSquares = squares.slice();
 
 	if (calculateWinner(squares) || squares[i]) { return; }
@@ -54,7 +61,13 @@ function handleClick(i, squares, xIsNext, onPlay, onLocation) {
 // are components which show a cell of the Board.
 //
 
-function Square({ i, value, onSquareClick, squares}) {
+function Square({ 
+	i, 
+	value, 
+	onSquareClick, 
+	squares
+}) {
+
 	const winNb = calculateWinner(squares);
 	if (!winNb) {
 		return (
@@ -160,9 +173,8 @@ function RenderSquare({
 
 
 //
-// The Game function is the main component 
-// which include Square function, history function 
-// and winner caluculater.
+// The Board function.
+// which include Squares function and status of the player. 
 //
 
 function Board({ 
