@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+
+.game {
+	margin-top: 20px;
+	width: 50%;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%,0);
+	display: flex;
+}
+
+.square {
+	border: 1px solid #999;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	height: 34px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+}
+
+.board {
+	width: 200px;
+	padding-right: 15px;
+}
+
+.status {
+	font-size: 1em;
+	padding-bottom: 10px;
+}
+
+.borderRow {
+	width: 100%;
+	display: flex;
+}
+
+.history {
+	width: 200px;
+	padding: 15px 20px 15px 20px;
+	background-color: #eeeeee;
+}
+
+.historyBtn {
+	background-color: #fff;
+	border: 0;
+	font-size: 0.8em;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.historyList {
+	list-style: none;
+	padding: 0;
+}
+
+/*
+.borderRow:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+*/
+
+.fs08 {
+	font-size: 0.8em;
+}
